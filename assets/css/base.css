@@ -20,25 +20,28 @@ ul{
     padding-left: 0px;
     margin-left: 0px;
     list-style: none;
+    display: block;
 }
 
 li{
     padding-left: 0px;
     margin-left: 0px;
+    display: block;
 }
 
 a{
     text-decoration: none;
     color: black;
+    display: block;
 }
 
-.base-title{
+.base__title{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.base-heading{
+.base__heading{
     font-size: 20px;
     font-weight: 600;
     line-height: 36px;
@@ -50,12 +53,11 @@ a{
     text-transform: uppercase;
 }
 
-.base-menu{
+.base__menu{
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 120px;
     overflow: auto;
     /* ẩn scroll  */
@@ -63,18 +65,18 @@ a{
     -ms-overflow-style: none;
 }
 
-.base-menu::-webkit-scrollbar { 
+.base__menu::-webkit-scrollbar { 
     width: 0 !important;
     display: none; 
 }
 
-.base-menu-item{
+.base__item{
     min-width: 118px;
+    /* max-width: 120px; */
     margin: 0 10px;
-    cursor: pointer;
 }
 
-.base-menu-item--icon{
+.base__item--icon{
     width: 80px;
     height: 80px;
     margin: 0 auto;
@@ -86,7 +88,11 @@ a{
     justify-content: center;
 }
 
-.base-menu-item--text{
+.base__item--icon.active{
+    background-color: var(--red-pri);
+}
+
+.base__item--text{
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;

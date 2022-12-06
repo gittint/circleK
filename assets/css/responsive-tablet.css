@@ -16,7 +16,7 @@
         height: 230px;
     }
 
-    .body__category-content-list{
+    .category__content-list{
         flex-wrap: nowrap;
         overflow: auto;
         /* ẩn scroll  */
@@ -24,7 +24,7 @@
         -ms-overflow-style: none;
     }
 
-    .body__category-content-list::-webkit-scrollbar { 
+    .category__content-list::-webkit-scrollbar { 
         width: 0 !important;
         display: none; 
     }
