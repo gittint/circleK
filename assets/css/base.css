@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --red-pri : #ee2e24;
+    --orange-pri : #f99b2a;
+    --text : #333333;
+    --border : rgba(0, 0, 0, 0.15);
+    --foot-bg : #F4F4F4;
+}
+
+html{  
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+ul{
+    padding-left: 0px;
+    margin-left: 0px;
+    list-style: none;
+}
+
+li{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
