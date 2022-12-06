@@ -16,6 +16,19 @@
         height: 230px;
     }
 
+    .body__category-content-list{
+        flex-wrap: nowrap;
+        overflow: auto;
+        /* ẩn scroll  */
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+    }
+
+    .body__category-content-list::-webkit-scrollbar { 
+        width: 0 !important;
+        display: none; 
+    }
+
     .footer__body{
         display: block;
     }
@@ -30,5 +43,23 @@
 
     .footer__box{
         height: auto;
+    }
+
+    .footer__form{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__form{
+        margin: 0;
+    }
+
+    .footer__form-title{
+        display: none;
+    }
+
+    .footer__form-icon{
+        display: none;
     }
 }
