@@ -1,0 +1,34 @@
+@media (max-width:1024px){
+    .nav__content{
+        padding: 0px;
+    }
+
+    /* icon ở nav  */
+    .nav__content-menu-item{
+        display: none;
+    }
+
+    .nav__content-menu{
+        padding: 0px;
+    }
+
+    .swiper{
+        height: 230px;
+    }
+
+    .footer__body{
+        display: block;
+    }
+
+    .footer__body-content--text{
+        margin-right: 0px;
+    }
+
+    .footer__body-ads{
+        margin-top: 40px;
+    }
+
+    .footer__box{
+        height: auto;
+    }
+}
