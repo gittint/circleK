@@ -16,7 +16,7 @@
         height: 230px;
     }
 
-    .category__content-list{
+    .product__list{
         flex-wrap: nowrap;
         overflow: auto;
         /* ẩn scroll  */
@@ -24,20 +24,20 @@
         -ms-overflow-style: none;
     }
 
-    .category__content-list::-webkit-scrollbar { 
+    .product__list::-webkit-scrollbar { 
         width: 0 !important;
         display: none; 
     }
 
-    .footer__body{
+    .footBody{
         display: block;
     }
 
-    .footer__body-content--text{
+    .footBody__content-text{
         margin-right: 0px;
     }
 
-    .footer__body-ads{
+    .footBody__ads{
         margin-top: 40px;
     }
 
@@ -55,11 +55,11 @@
         margin: 0;
     }
 
-    .footer__form-title{
+    .form__title{
         display: none;
     }
 
-    .footer__form-icon{
+    .form__icon{
         display: none;
     }
 }
