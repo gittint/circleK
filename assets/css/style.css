@@ -1,9 +1,6 @@
 .app{
     max-width: 1440px;
     margin: 0 auto;
-    /* border-right: 1px solid black; 
-    border-left: 1px solid black;  */
-    /* note */
 }
 
 .mobile{
@@ -12,7 +9,6 @@
 
 /* nav  */
 .header{
-    height: 78px;
     width: 100%;
     background-color: var(--red-pri);
     position: relative;
@@ -34,17 +30,14 @@
     position: relative;
     height: 100%;
     z-index: 2;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     box-sizing: border-box;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .header__logo{
+    /* width logo  */
     width: 165.03px;
-    height: 43.69px;
     padding: 13px 16.2px 8.09px 16.21px;
     display: flex;
     align-items: center;
@@ -53,16 +46,10 @@
     float: left;
 }
 
-.header__logo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .header__logo::after{
     position: absolute;
     content: "";
-    height: 78px;
+    height: 100%;
     top: 0px;
     left: 0px;
     border-left: 1px solid white;
@@ -70,24 +57,31 @@
 
 .header__box{
     display: flex;
-    height: 100%;
     background-color: white;
-    align-items: center;
-    /* justify-content: center; */
-    /* padding-left: 40px; */
-    /* padding-right: 31.5px; */
+    /* align-items: center; */
 }
 
 .header__menu{
     display: flex;
-    padding-left: 38.28px;
+    width: 100%;
+    max-width: 480px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.header-item__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header__item{
     margin: 0 10px;
     display: block;
+    padding: 14px 0;
 }
 
 .header-item__icon{
@@ -95,35 +89,42 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
+    /* căn chỉnh icon  */
+    width: 30px;
+    height: 30px;
+}
+
+.header-item__icon img{
+    height: 100%;
 }
 
 .header-item__title{
     font-size: 12px;
-    font-weight: 500;
     line-height: 15px;
     letter-spacing: 0em;
     text-align: center;
     color: var(--text);
-
 }
 
 .header__form{
     display: flex;
     align-items: center;
-    padding-left: 40px;
     padding-right: 10px;
+    width: 100%;
+    max-width: 310px;
+    justify-content: space-between;
 }
 
 .header-form__input{
     font-size: 12px;
-    font-weight: 500;
     line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
     padding: 11.5px 15px;
     border-radius: 20px;
     color: var(--text);
-    width: 240px;
+    max-width: 240px;
+    width: 100%;
     box-sizing: border-box;
     border: 1px solid var(--border);
 }
@@ -135,7 +136,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin-left: 20px;
     background-color: var(--red-pri);
 }
 
@@ -146,43 +146,30 @@
 .header__icon{
     display: flex;
     align-items: center;
-    /* padding-left: 5px;
-    padding-right: 5px; */
 }
 
 .header-icon__link{
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 2.5px;
+    margin: 0 9px;
 }
 
 .header-icon__link--active{
     display: none;
 }
 
-
-
-/* .header-icon__link {
-    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
-} */
-
-
-
 .header__language{
     font-size: 12px;
-    font-weight: 500;
     line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
     display: flex;
-    /* padding-right: 46.94px */
-    /* padding-right: 29.94px;
-    padding-left: 5px; */
-    /* chỉnh  */
+    align-items: center;
+    margin-left: 10px;
 }
 
 .header__language--vi,.header__language--eng{
@@ -202,10 +189,7 @@
 /* banner  */
 .swiper {
     width: 100%;
-    height: 420px;
-    /* position: static; */
     border-top: 1px solid white;
-
 }
 
 .swiper-slide{
@@ -219,13 +203,10 @@
 
 /* body  category*/
 
-.category{
-    
-}
-
-
 .category__product{
-    padding: 0 120px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     border-bottom: 1px solid var(--orange-pri);
 }
 
@@ -233,36 +214,22 @@
     border-bottom: 1px solid var(--orange-pri);
 }
 
-.product__heading{
-    
-}
-
-/* .product__heading::after{
-    position: absolute;
-    content: "";
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    border-bottom: 1px solid var(--red-pri);
-} */
-
 .product__list{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: start;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 
 .product__item{
-    width: 300px;
-    min-width: 246px;
+    width: calc(100% / 4);
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .product-item__img{
     width: 100%;
-    height: 246px;
     object-fit: cover;
 }
 
@@ -273,19 +240,14 @@
 }
 
 .product-item__title{
-    font-size: 14px;
     font-weight: 600;
     line-height: 17px;
-    letter-spacing: 0.05em;
     text-align: center; 
-    margin-top: 10px;
 }
 
 .product-item__price{
-    font-size: 14px;
     font-weight: 600;
     line-height: 17px;
-    letter-spacing: 0.05em;
     text-align: center;
     margin-top: 10px;
     color: var(--red-pri);
@@ -301,20 +263,13 @@
 
 .category__banner{
     width: 100%;
-    height: 420px;
-}
-
-.category__banner img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 /* body service  */
 
 .service{
     background-color: var(--foot-bg);
-    padding-top: 40px;
+    padding-top: 34px;
     padding-bottom: 40px;
 }
 
@@ -345,25 +300,17 @@
 .event__list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
 .event__item{
-    width: 386.67px;
-    height: 386.67px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: calc((100% / 3) - 14px );
 }
 
 .event-item__link{
     display: block;
     width: 100%;
-    height: 100%;
-}
-
-.event__item:first-child{
-    /* margin-left: 10px; */
 }
 
 .event__item img{
@@ -376,7 +323,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 33px;
 }
 
 /* footer  */
@@ -387,6 +334,12 @@
     position: relative;
     /* note  */
     margin-top: 88px;
+}
+
+.footer__inner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer__heading{
@@ -404,21 +357,17 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--border);
-    padding-bottom:33px;
-    margin: 30px 120px 0;
+    padding-bottom: 33px;
+    margin-top: 30px;
 }
 
 .footBody__content{
-    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
 }
 
-.footBody-content__text{
-    margin-right: 259px;
-}
 
 .footBody__ads{
     display: flex;
@@ -444,18 +393,14 @@
 .download__app{
     display: block;
     width: 91px;
-    height: 26px;
-    margin-bottom:5px ;
 }
 
 .download__gg{
     display: block;
     width: 91px;
-    height: 26px;
 }
 
 .footer__foot{
-    margin: 2px 117px 0px 123px;
     padding-top: 20px;
     padding-bottom: 35px;
     display: flex;
@@ -491,10 +436,10 @@
     text-align: left;
     
 }
-
+/* ------------------- */
 .footer__box{
     width: 100%;
-    height: 100px;
+    padding: 0px 0px;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -504,16 +449,18 @@
 .footer__form{
     background-color: white;
     width: 100%;
-    max-width: 1047.25px;
-    height: 100%;
+    max-width: 1047px;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
     padding-left: 40px;
     border-radius: 20px;
     box-sizing: border-box;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+}
+
+.form__inner{
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
 }
 
 .form__logo{
@@ -531,7 +478,7 @@
 }
 
 .form-title__desc{
-    font-size: 14px;
+    
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
@@ -550,7 +497,7 @@
 
 .form__input{
     font-size: 12px;
-    font-weight: 500;
+    
     line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
@@ -581,9 +528,9 @@
 .form__icon::after{
     position: absolute;
     content: "";
-    top: -7px;
+    top: 0px;
     left: -18px;
-    height: 50px;
+    height: 100%;
     border-left:1px solid var(--border) ;
 }
 

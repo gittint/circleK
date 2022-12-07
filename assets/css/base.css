@@ -39,6 +39,11 @@ a{
     display: block;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 .base__title{
     display: flex;
     align-items: center;
@@ -49,7 +54,6 @@ a{
     font-size: 20px;
     font-weight: 600;
     line-height: 36px;
-    letter-spacing: 0.05em;
     display: inline-block;
     margin: 0 auto;
     border-bottom: 3px solid var(--red-pri);
@@ -96,11 +100,13 @@ a{
     background-color: var(--red-pri);
 }
 
+.base-item__icon img{
+    width: 40px;
+    height: 40px;
+}
+
 .base-item__text{
-    font-size: 14px;
     font-weight: 600;
-    line-height: 20px;
-    letter-spacing: 0.05em;
     text-align: center;
     margin-top: 8px;
 }
@@ -108,7 +114,6 @@ a{
 .base-btn{
     display: inline-block;
     padding: 11.5px 25px;
-    font-size: 14px;
     font-weight: 600;
     line-height: 17px;
     letter-spacing: 0;
