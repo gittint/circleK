@@ -22,104 +22,163 @@
 </head>
 <body>
     <div class="app">
-        <!-- header  -->
-        <header class="header">
-            <div class="header__bg">
-                <!-- bg  -->
-                <div class="header__bg--red"></div>
-                <div class="header__bg--orange"></div>
-                <!-- header content  -->
-                <div class="header__content">
-                    <div class="header__logo">
-                        <img src="./assets/img/fullLogo-5.png" alt="">    
-                    </div>
-                    <!-- header box  -->
-                    <div class="header__box">
-                        <!-- header menu  -->
-                        <ul class="header__menu">
-                            <li class="header__item">
-                                <a href="" class="header-item__link">
-                                    <div class="header-item__icon">
-                                        <img src="./assets/icon/nav_icon_1.svg" alt="">        
-                                    </div>
-                                    <div class="header-item__title">Sản phẩm</div>
-                                </a>
-                            </li>
-        
-                            <li class="header__item">
-                                <a href="" class="header-item__link">
-                                    <div class="header-item__icon">
-                                        <img src="./assets/icon/nav_icon_2.svg" alt="">
-                                    </div>
-                                    <div class="header-item__title">Ăn & uống</div>
-                                </a>
-                            </li>
-        
-                            <li class="header__item">
-                                <a href="" class="header-item__link">
-                                    <div class="header-item__icon">
-                                        <img src="./assets/icon/nav_icon_3.svg" alt="">
-                                    </div>
-                                    <div class="header-item__title">Ưu đãi</div>
-                                </a>
-                            </li>
-        
-                            <li class="header__item">
-                                <a href="" class="header-item__link">
-                                    <div class="header-item__icon">
-                                        <img src="./assets/icon/nav_icon_4.svg" alt=""> 
-                                    </div>
-                                    <div class="header-item__title">Tìm cửa hàng</div>
-                                </a>
-                            </li>
-        
-                            <li class="header__item">
-                                <a href="" class="header-item__link">
-                                    <div class="header-item__icon">
-                                        <img src="./assets/icon/nav_item_5.svg" alt="">
-                                             
-                                    </div>
-                                    <div class="header-item__title">Việc làm</div>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- header form -->
-                        <div class="header__form">
-                            <!-- input  -->
-                            <input type="text" class="header-form__input" name="address" id="address" placeholder="Địa chỉ nhận hàng">
+        <!-- Mobile nav -->
+        <nav class="mobile">
+            <div class="mobile__list">
 
-                            <!-- menu icon  -->
-                            <a href="#" class="header-form__icon active">
-                                <img src="./assets/icon/nav_item_6.svg" alt="">   
-                            </a>
+                <div class="mobile__item">
+                    <a href="#" class="mobile-item__link">
+                        <div class="mobile-item__img">
+                            <img src="./assets/icon/mobile_icon_1.svg" alt="">
                         </div>
-                        <!-- header icon  -->
-                        <ul class="header__icon">
-                            <li class="header-icon__item">
-                                <a href="#" class="header-icon__link">
-                                    <img src="./assets/icon/nav_item_7.svg" alt="">    
-                                </a>
-                            </li>
-                            <li class="header-icon__item">
-                                <a href="#" class="header-icon__link">
-                                    <img src="./assets/icon/nav_item_8.svg" alt="">
-                                </a>
-                            </li>
-                            <li class="header-icon__item">
-                                <a href="#" class="header-icon__link">
-                                    <img src="./assets/icon/nav_item_9.svg" alt="">    
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- header language -->
-                        <div class="header__language">
-                            <div class="header__language--vi active">VI</div>
-                            <div class="header__language--eng">ENG</div>   
+                        <div class="mobile-item__text">
+                            Trang chủ
                         </div>
-                    </div>
+                    </a>
+                </div>
 
+                <div class="mobile__item">
+                    <a href="#" class="mobile-item__link">
+                        <div class="mobile-item__img">
+                            <img src="./assets/icon/nav_icon_1.svg" alt="">
+                        </div>
+                        <div class="mobile-item__text">
+                            Sản phẩm
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mobile__item active">
+                    <div class="mobile__active">
+                        <a href="#" class="mobile-item__link">
+                            <div class="mobile-active__img">
+                                <img src="./assets/icon/mobile_icon_2.svg" alt="">
+                            </div>
+                            <div class="mobile-active__text">
+                                Sản phẩm
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mobile__item">
+                    <a href="#" class="mobile-item__link">
+                        <div class="mobile-item__img">
+                            <img src="./assets/icon/nav_icon_4.svg" alt="">
+                        </div>
+                        <div class="mobile-item__text">
+                            Trang chủ
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mobile__item">
+                    <a href="#" class="mobile-item__link">
+                        <div class="mobile-item__img">
+                            <img src="./assets/icon/mobile_icon_3.svg" alt="">
+                        </div>
+                        <div class="mobile-item__text">
+                            Trang chủ
+                        </div>
+                    </a>
                 </div>
             </div>
+        </nav>
+
+        <!-- header  -->
+        <header class="header">       
+            <div class="header__content">
+                <div class="header__logo">
+                    <img src="./assets/img/fullLogo-5.png" alt="">    
+                </div>
+                <!-- header box  -->
+                <div class="header__box">
+                    <!-- header menu  -->
+                    <ul class="header__menu">
+                        <li class="header__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/nav_icon_1.svg" alt="">        
+                                </div>
+                                <div class="header-item__title">Sản phẩm</div>
+                            </a>
+                        </li>
+    
+                        <li class="header__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/nav_icon_2.svg" alt="">
+                                </div>
+                                <div class="header-item__title">Ăn & uống</div>
+                            </a>
+                        </li>
+    
+                        <li class="header__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/nav_icon_3.svg" alt="">
+                                </div>
+                                <div class="header-item__title">Ưu đãi</div>
+                            </a>
+                        </li>
+    
+                        <li class="header__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/nav_icon_4.svg" alt=""> 
+                                </div>
+                                <div class="header-item__title">Tìm cửa hàng</div>
+                            </a>
+                        </li>
+    
+                        <li class="header__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/nav_item_5.svg" alt="">
+                                            
+                                </div>
+                                <div class="header-item__title">Việc làm</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- header form -->
+                    <div class="header__form">
+                        <!-- input  -->
+                        <input type="text" class="header-form__input" name="address" id="address" placeholder="Địa chỉ nhận hàng">
+    
+                        <!-- menu icon  -->
+                        <a href="#" class="header-form__icon active">
+                            <img src="./assets/icon/nav_item_6.svg" alt="">  
+                            <img class="header-form__icon--mobile" src="./assets/icon/nav_icon_6_active.svg" alt=""> 
+                        </a>
+                    </div>
+                    <!-- header icon  -->
+                    <ul class="header__icon">
+                        <li class="header-icon__item">
+                            <a href="#" class="header-icon__link">
+                                <img src="./assets/icon/nav_item_7.svg" alt="">    
+                                <img src="./assets/icon/nav_item_7_active.svg" alt="" class="header-icon__link--active">
+                            </a>
+                        </li>
+                        <li class="header-icon__item header-icon__item--nonmobile">
+                            <a href="#" class="header-icon__link">
+                                <img src="./assets/icon/nav_item_8.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="header-icon__item">
+                            <a href="#" class="header-icon__link">
+                                <img src="./assets/icon/nav_item_9.svg" alt="">   
+                                <img src="./assets/icon/nav_item_9_active.svg" alt="" class="header-icon__link--active"> 
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- header language -->
+                    <div class="header__language">
+                        <div class="header__language--vi active">VI</div>
+                        <div class="header__language--eng">ENG</div>   
+                    </div>
+                </div>
+            </div>    
         </header>
 
         <!-- banner  -->
@@ -211,70 +270,72 @@
                     <h2 class="product__heading base__heading">Sản phẩm mới</h2>
                 </div>
                 <!-- list  -->
-                <div class="product__list">
-                    <!-- item  -->
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/1665/fc4b/caf15186136cf8b59b067bf5dbdbb40b?Expires=1671408000&Signature=Lba3Eww8hmjE1sZb4JaJSrwQ6fDYuZxf3ko~XuUtQCuOKyRaXmgX2n0X-t1xAb8U1YSFmvr1eELzv4r9QnCnBWx5hfqZJw3ofUa7hrLC4rS~iXz3wtVBv22IDKNawdd9X-Dq4SG8asIr7d~E2eOa8x9UKA~fw1c4Ny1DxFFd8uCBM5grWpK6oEgiIbQh-5-DUwKgXCuuOvTGxBYrHsqxdq~ZmHXm3~QtZp5h0w0yANshIvI-XFQtuhcMUKf1OQVUsAls~VR8xLrEohpR7Mq5JoQziGlhOqNjlW7coN1hgCXaumvf-ONmx8S85oUeqoKVCzzdPD4hnfJrUc~fSmxTQw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Sandwich</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/dd0e/8ffb/3d632ffde2bc9d079866617f19d46886?Expires=1671408000&Signature=h33XA45WJ4Y83Rp3dZ-bltIl3Fsrf1qXNF9bXTOmrJpEl526AoYsxambY8puI9uyMXpMY803BLISumECZJCtH63awJgRBxv9qDD0ay2NfniUGl3pRd5bdF6GnL67zBQETH~BxTrb-4R9eX0qCuWwbFRw~tO9jLSWS97pAtY4b25zo0DYAJCBEGzIQu8h0BhBDLtLUtQAb6uKgEaK2YxGonCq7X9aTIEhKarNBR-szQWjaRt1te90sI6AKt7nDGPeqVuRQeo47ZwGmt~DFcVvaiaeWjbS79lofAGyDl97KeKfzE9IMzaIMOTP6E4n7B1SCVpH9nr6jFm8c1~-dwMt8w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Mỳ trộn xúc xinh trứng chiên</div>
-                            <div class="product-item__price">Pre-order</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/d26b/6aa5/269b5f892fbd49e1e1020d471ddb04fd?Expires=1671408000&Signature=AsMruWjyYDoEYbPCRsF8VPB6-1EnufsMD6zGa4f-ude6NrJUjgz~pOl-DhAaTcqDOvu1EWIt2gd0JArr5OCFqoVv-aACPK7~C4H2e2nhWlm07tft6lxbsdOHbzBqUZdMJxUYg2nv9~e13pD5PW~WR~zfZk1eamc7DiY3gfl6m78ctIWCJkrXF7SKVw9a9JDMhiUvZ1mmyHp2-QNegt5Elbm2bmK0Kwa~h6WcDCXGgjuL1rL7d7Ax0y3GLOjorajG-o61W47a5iYgRkcFSSaUM23RvoegwwGFbzgbqCIYmAw7sQZyjDs4OCxAR-uUvLNQ3JPhtWIFbppR9qo1d9ti5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Dimsum</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/af94/c148/941e7cfb3528bd84bf9ffacab4c0a5a6?Expires=1671408000&Signature=LqE3vatGWPjDgkdjnt8ME8tstT8E9DGHP-cXshGrhA-gDDyA4k-bnkAXnFBlTNQz8lsAeOhAsH8kMaYRLXxZxXGRjuOp0Nt1whhlt8eSLGSqZI1BeLkzYnmIl5AQ6uBb55Np9iucTauP35y1ztVq588WHS9sZTYtjUgIZAt3JAXHS8wDOp3clhRHB9ZnLNa-vgrprc2VZyHdmLNit1hCQHqR7kI9~vrt3h29XDScgJPPvGbqlWfdxy29VuNDz6Gl13a3gc0W286Qmqo7FPcMAaUEJohEdpBQIfj8wB18U7Go8-Q-VsX~uhNpdyQgWrrvVPMJzffook0sSondwsJyGw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Xôi lá chuối</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/4b03/8f9e/3c12cf24ed00143d9e157f378261d2fb?Expires=1671408000&Signature=dhU0ipMsdg0sx50MCUWgN44UEgHEU0QOx~g10F7h6hBp8tyQkvJovZ6jle-idYTb~qSN~oiZwYP8Cai8-L~GplDFDdhN349QDGNqzP7FBPKB6mDnyKrBs9GTMbQ9OMuap7zeFD8TMEiNDS7dm-uWNokOpODoXzIi5MzFX40pO23DM8Kt0JL~oDPu3BPpFlTG-N091DmM3yl9CfL8aD5Cyogy1OiwX7EJlX3i0aqMYCP2U~EkoC2Ys9WgUS7tEhGh0tbkcVi-D~tm4zOY4NFd73noXpXf0TzpVzj9BT4W7UK9GUaLFsxeI0rG92LXOsYRe9~OnD7JFIQrIt7y4j3sOA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Trà sữa Thái (xanh)</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/3ee8/51aa/e9dd8b587df476d13d532a4363a9b275?Expires=1671408000&Signature=OMO66aiFIqw5yCmygQtwJSkNLHsyve8epfR1QelinUdr85GmxTl8XET1XXCcRplcCImsXGOLIJOjr5jri4zIjNysfqD1ecdy1LXV7NDewzJHGBMaedM8KhCrZEDnzqrpPkAXuWhzJR-TWiLK5Z8au2pOndWhb0WGjDeG-Pixv~l3WwuFWWiCmGqwjRNdbMBHwOxFH1bZBED6opR8vDhFKYQUN7S1Ar9MZwh0eIe8zakEoge2Gzgq2hrPNV7NGMbiDkwQErZlMVhDN2N58Y7j3jJ3YOBQTWH1--oKIgdVoqkZws2qjyhwl3TMvM-FgTbukq0hZ84XcOFQm2P~hV~gbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Sữa tươi cà phê</div>
-                            <div class="product-item__price">26.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/bc94/92ba/156700ec98baea4df2466aa83e901183?Expires=1671408000&Signature=EjtGupgjgKlyc7BoUj5RqybsljJ0Q46dzk4WxGPHws~fHmEDKQeKW9~vm3BtcplkkzjDiQW~74HP32Bj5sepDLzdYugtaMYvMjIS9oQi~jiDzpyrlbvY2DEb7YqEEXPJ8~uirY-Qf1f6UJbkItlusxtUIUXaiEfHw0XEDX3T1edgTT1YaKmjoZtcEJHNTNDuG-3nDPJzrFRMrTqJpwZ38W34nxwbkfKGyYts3WM2VPd12fImkv~Zy0LaCRKPCvEuRByM3RjUY-6wukNvnPhglpUPDxjpKfPGkpf1CV1Qb8vwwXkCu0sbhdVrsdBL2O8j~tfo4-oEkdz6IqBfESBsVg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Trà đào</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
-                    </div>
-
-                    <div class="product__item">
-                        <a href="#" class="product-item__link">
-                            <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/af94/c148/941e7cfb3528bd84bf9ffacab4c0a5a6?Expires=1671408000&Signature=LqE3vatGWPjDgkdjnt8ME8tstT8E9DGHP-cXshGrhA-gDDyA4k-bnkAXnFBlTNQz8lsAeOhAsH8kMaYRLXxZxXGRjuOp0Nt1whhlt8eSLGSqZI1BeLkzYnmIl5AQ6uBb55Np9iucTauP35y1ztVq588WHS9sZTYtjUgIZAt3JAXHS8wDOp3clhRHB9ZnLNa-vgrprc2VZyHdmLNit1hCQHqR7kI9~vrt3h29XDScgJPPvGbqlWfdxy29VuNDz6Gl13a3gc0W286Qmqo7FPcMAaUEJohEdpBQIfj8wB18U7Go8-Q-VsX~uhNpdyQgWrrvVPMJzffook0sSondwsJyGw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
-                            <div class="product-item__title">Xôi lá chuối</div>
-                            <div class="product-item__price">23.000Đ</div>
-                        </a>
+                <div class="product-list__mobile--block">
+                    <div class="product__list">
+                        <!-- item  -->
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/1665/fc4b/caf15186136cf8b59b067bf5dbdbb40b?Expires=1671408000&Signature=Lba3Eww8hmjE1sZb4JaJSrwQ6fDYuZxf3ko~XuUtQCuOKyRaXmgX2n0X-t1xAb8U1YSFmvr1eELzv4r9QnCnBWx5hfqZJw3ofUa7hrLC4rS~iXz3wtVBv22IDKNawdd9X-Dq4SG8asIr7d~E2eOa8x9UKA~fw1c4Ny1DxFFd8uCBM5grWpK6oEgiIbQh-5-DUwKgXCuuOvTGxBYrHsqxdq~ZmHXm3~QtZp5h0w0yANshIvI-XFQtuhcMUKf1OQVUsAls~VR8xLrEohpR7Mq5JoQziGlhOqNjlW7coN1hgCXaumvf-ONmx8S85oUeqoKVCzzdPD4hnfJrUc~fSmxTQw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Sandwich</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/dd0e/8ffb/3d632ffde2bc9d079866617f19d46886?Expires=1671408000&Signature=h33XA45WJ4Y83Rp3dZ-bltIl3Fsrf1qXNF9bXTOmrJpEl526AoYsxambY8puI9uyMXpMY803BLISumECZJCtH63awJgRBxv9qDD0ay2NfniUGl3pRd5bdF6GnL67zBQETH~BxTrb-4R9eX0qCuWwbFRw~tO9jLSWS97pAtY4b25zo0DYAJCBEGzIQu8h0BhBDLtLUtQAb6uKgEaK2YxGonCq7X9aTIEhKarNBR-szQWjaRt1te90sI6AKt7nDGPeqVuRQeo47ZwGmt~DFcVvaiaeWjbS79lofAGyDl97KeKfzE9IMzaIMOTP6E4n7B1SCVpH9nr6jFm8c1~-dwMt8w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Mỳ trộn xúc xinh trứng chiên</div>
+                                <div class="product-item__price">Pre-order</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/d26b/6aa5/269b5f892fbd49e1e1020d471ddb04fd?Expires=1671408000&Signature=AsMruWjyYDoEYbPCRsF8VPB6-1EnufsMD6zGa4f-ude6NrJUjgz~pOl-DhAaTcqDOvu1EWIt2gd0JArr5OCFqoVv-aACPK7~C4H2e2nhWlm07tft6lxbsdOHbzBqUZdMJxUYg2nv9~e13pD5PW~WR~zfZk1eamc7DiY3gfl6m78ctIWCJkrXF7SKVw9a9JDMhiUvZ1mmyHp2-QNegt5Elbm2bmK0Kwa~h6WcDCXGgjuL1rL7d7Ax0y3GLOjorajG-o61W47a5iYgRkcFSSaUM23RvoegwwGFbzgbqCIYmAw7sQZyjDs4OCxAR-uUvLNQ3JPhtWIFbppR9qo1d9ti5Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Dimsum</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/af94/c148/941e7cfb3528bd84bf9ffacab4c0a5a6?Expires=1671408000&Signature=LqE3vatGWPjDgkdjnt8ME8tstT8E9DGHP-cXshGrhA-gDDyA4k-bnkAXnFBlTNQz8lsAeOhAsH8kMaYRLXxZxXGRjuOp0Nt1whhlt8eSLGSqZI1BeLkzYnmIl5AQ6uBb55Np9iucTauP35y1ztVq588WHS9sZTYtjUgIZAt3JAXHS8wDOp3clhRHB9ZnLNa-vgrprc2VZyHdmLNit1hCQHqR7kI9~vrt3h29XDScgJPPvGbqlWfdxy29VuNDz6Gl13a3gc0W286Qmqo7FPcMAaUEJohEdpBQIfj8wB18U7Go8-Q-VsX~uhNpdyQgWrrvVPMJzffook0sSondwsJyGw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Xôi lá chuối</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/4b03/8f9e/3c12cf24ed00143d9e157f378261d2fb?Expires=1671408000&Signature=dhU0ipMsdg0sx50MCUWgN44UEgHEU0QOx~g10F7h6hBp8tyQkvJovZ6jle-idYTb~qSN~oiZwYP8Cai8-L~GplDFDdhN349QDGNqzP7FBPKB6mDnyKrBs9GTMbQ9OMuap7zeFD8TMEiNDS7dm-uWNokOpODoXzIi5MzFX40pO23DM8Kt0JL~oDPu3BPpFlTG-N091DmM3yl9CfL8aD5Cyogy1OiwX7EJlX3i0aqMYCP2U~EkoC2Ys9WgUS7tEhGh0tbkcVi-D~tm4zOY4NFd73noXpXf0TzpVzj9BT4W7UK9GUaLFsxeI0rG92LXOsYRe9~OnD7JFIQrIt7y4j3sOA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Trà sữa Thái (xanh)</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/3ee8/51aa/e9dd8b587df476d13d532a4363a9b275?Expires=1671408000&Signature=OMO66aiFIqw5yCmygQtwJSkNLHsyve8epfR1QelinUdr85GmxTl8XET1XXCcRplcCImsXGOLIJOjr5jri4zIjNysfqD1ecdy1LXV7NDewzJHGBMaedM8KhCrZEDnzqrpPkAXuWhzJR-TWiLK5Z8au2pOndWhb0WGjDeG-Pixv~l3WwuFWWiCmGqwjRNdbMBHwOxFH1bZBED6opR8vDhFKYQUN7S1Ar9MZwh0eIe8zakEoge2Gzgq2hrPNV7NGMbiDkwQErZlMVhDN2N58Y7j3jJ3YOBQTWH1--oKIgdVoqkZws2qjyhwl3TMvM-FgTbukq0hZ84XcOFQm2P~hV~gbw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Sữa tươi cà phê</div>
+                                <div class="product-item__price">26.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/bc94/92ba/156700ec98baea4df2466aa83e901183?Expires=1671408000&Signature=EjtGupgjgKlyc7BoUj5RqybsljJ0Q46dzk4WxGPHws~fHmEDKQeKW9~vm3BtcplkkzjDiQW~74HP32Bj5sepDLzdYugtaMYvMjIS9oQi~jiDzpyrlbvY2DEb7YqEEXPJ8~uirY-Qf1f6UJbkItlusxtUIUXaiEfHw0XEDX3T1edgTT1YaKmjoZtcEJHNTNDuG-3nDPJzrFRMrTqJpwZ38W34nxwbkfKGyYts3WM2VPd12fImkv~Zy0LaCRKPCvEuRByM3RjUY-6wukNvnPhglpUPDxjpKfPGkpf1CV1Qb8vwwXkCu0sbhdVrsdBL2O8j~tfo4-oEkdz6IqBfESBsVg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Trà đào</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
+    
+                        <div class="product__item">
+                            <a href="#" class="product-item__link">
+                                <div class="product-item__img"><img src="https://s3-alpha-sig.figma.com/img/af94/c148/941e7cfb3528bd84bf9ffacab4c0a5a6?Expires=1671408000&Signature=LqE3vatGWPjDgkdjnt8ME8tstT8E9DGHP-cXshGrhA-gDDyA4k-bnkAXnFBlTNQz8lsAeOhAsH8kMaYRLXxZxXGRjuOp0Nt1whhlt8eSLGSqZI1BeLkzYnmIl5AQ6uBb55Np9iucTauP35y1ztVq588WHS9sZTYtjUgIZAt3JAXHS8wDOp3clhRHB9ZnLNa-vgrprc2VZyHdmLNit1hCQHqR7kI9~vrt3h29XDScgJPPvGbqlWfdxy29VuNDz6Gl13a3gc0W286Qmqo7FPcMAaUEJohEdpBQIfj8wB18U7Go8-Q-VsX~uhNpdyQgWrrvVPMJzffook0sSondwsJyGw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt=""></div>
+                                <div class="product-item__title">Xôi lá chuối</div>
+                                <div class="product-item__price">23.000Đ</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- button  -->
@@ -424,10 +485,10 @@
             <div class="footBody">
                 <div class="footBody__content">
                     <div class="footBody-content__text">
-                        CÔNG TY TNHH VÒNG TRÒN ĐỎ - Giấy CNĐKDN : 0306182043
-                        <br>Địa chỉ: 160 Bùi Thị Xuân, Phường Phạm Ngũ Lão, Quận 1, Tp.Hồ Chí Minh, Việt Nam
-                        <br>Hotline: 1900 3110 (7:00-22:00)
-                        <br>Email: info@circlek.com.vn
+                        <p>CÔNG TY TNHH VÒNG TRÒN ĐỎ - Giấy CNĐKDN : 0306182043</p>
+                        <p>Địa chỉ: 160 Bùi Thị Xuân, Phường Phạm Ngũ Lão, Quận 1, Tp.Hồ Chí Minh, Việt Nam</p>
+                        <p>Hotline: 1900 3110 (7:00-22:00)</p>
+                        <p>Email: info@circlek.com.vn</p>
                     </div>
                 </div>
                 <div class="footBody__ads">
