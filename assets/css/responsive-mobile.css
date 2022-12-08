@@ -266,6 +266,7 @@
 
     .footer{
         margin-top: 114px;
+        padding-bottom: 50px;
     }
 
     .footer__box{
@@ -413,6 +414,7 @@
         width: 100%;
         min-width: calc((100% /5) - 20px);
         margin: 0;
+        padding: 0;
         position: relative;
     }
 
@@ -424,6 +426,7 @@
         width: 100%;
         position: absolute;
         bottom: 0%;
+        transform: translateY(25%);
         left: 0%;
         background-color: var(--red-pri);
         min-width: 80px;
