@@ -1,5 +1,5 @@
 .app{
-    /* max-width: 1440px; */
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -210,11 +210,6 @@
 
 .swiper-slide{
     width: 100%;
-}
-
-.swiper-slide img{
-    width: 100%;
-    object-fit: cover;
 }
 
 /* body  category*/
