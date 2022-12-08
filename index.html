@@ -22,67 +22,6 @@
 </head>
 <body>
     <div class="app">
-        <!-- Mobile nav -->
-        <nav class="mobile">
-            <div class="mobile__list">
-                <div class="mobile__item">
-                    <a href="#" class="mobile-item__link">
-                        <div class="mobile-item__img">
-                            <img src="./assets/icon/mobile_icon_1.svg" alt="">
-                        </div>
-                        <div class="mobile-item__text">
-                            Trang chủ
-                        </div>
-                    </a>
-                </div>
-
-                <div class="mobile__item">
-                    <a href="#" class="mobile-item__link">
-                        <div class="mobile-item__img">
-                            <img src="./assets/icon/nav_icon_1.svg" alt="">
-                        </div>
-                        <div class="mobile-item__text">
-                            Sản phẩm
-                        </div>
-                    </a>
-                </div>
-
-                <div class="mobile__item active">
-                    <div class="mobile__active">
-                        <a href="#" class="mobile-item__link">
-                            <div class="mobile-active__img">
-                                <img src="./assets/icon/mobile_icon_2.svg" alt="">
-                            </div>
-                            <div class="mobile-active__text">
-                                Sản phẩm
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="mobile__item">
-                    <a href="#" class="mobile-item__link">
-                        <div class="mobile-item__img">
-                            <img src="./assets/icon/nav_icon_4.svg" alt="">
-                        </div>
-                        <div class="mobile-item__text">
-                            Trang chủ
-                        </div>
-                    </a>
-                </div>
-
-                <div class="mobile__item">
-                    <a href="#" class="mobile-item__link">
-                        <div class="mobile-item__img">
-                            <img src="./assets/icon/mobile_icon_3.svg" alt="">
-                        </div>
-                        <div class="mobile-item__text">
-                            Trang chủ
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </nav>
 
         <!-- header  -->
         <header class="header">       
@@ -94,6 +33,16 @@
                 <div class="header__box">
                     <!-- header menu  -->
                     <ul class="header__menu">
+
+                        <li class="header__item mobile__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/mobile_icon_1.svg" alt="">        
+                                </div>
+                                <div class="header-item__title">Trang chủ</div>
+                            </a>
+                        </li>
+
                         <li class="header__item">
                             <a href="" class="header-item__link">
                                 <div class="header-item__icon">
@@ -103,7 +52,7 @@
                             </a>
                         </li>
     
-                        <li class="header__item">
+                        <li class="header__item mobile__item--none">
                             <a href="" class="header-item__link">
                                 <div class="header-item__icon">
                                     <img src="./assets/icon/nav_icon_2.svg" alt="">
@@ -112,13 +61,25 @@
                             </a>
                         </li>
     
-                        <li class="header__item">
+                        <li class="header__item mobile__item--none">
                             <a href="" class="header-item__link">
                                 <div class="header-item__icon">
                                     <img src="./assets/icon/nav_icon_3.svg" alt="">
                                 </div>
                                 <div class="header-item__title">Ưu đãi</div>
                             </a>
+                        </li>
+
+                        <li class="header__item mobile-item__box--red mobile__item">
+                            <div class="mobile__item--red">
+                                <a href="" class="header-item__link">
+                                    <div class="header-item__icon">
+                                        <img src="./assets/icon/mobile_icon_2.svg" alt="">        
+                                    </div>
+                                    <div class="header-item__title">Tài khoản</div>
+                                </a>
+                            </div>
+                            
                         </li>
     
                         <li class="header__item">
@@ -130,13 +91,22 @@
                             </a>
                         </li>
     
-                        <li class="header__item">
+                        <li class="header__item mobile__item--none">
                             <a href="" class="header-item__link">
                                 <div class="header-item__icon">
                                     <img src="./assets/icon/nav_item_5.svg" alt="">
                                             
                                 </div>
                                 <div class="header-item__title">Việc làm</div>
+                            </a>
+                        </li>
+
+                        <li class="header__item mobile__item">
+                            <a href="" class="header-item__link">
+                                <div class="header-item__icon">
+                                    <img src="./assets/icon/mobile_icon_3.svg" alt="">        
+                                </div>
+                                <div class="header-item__title">Thêm</div>
                             </a>
                         </li>
                     </ul>
@@ -483,7 +453,7 @@
             </div>
 
             <div class="footer__inner">
-                <div class="footer__heading"><strong>Circle K Vietnam </strong> - Chuỗi cửa hàng tiện lợi - Mở cửa 24/7</div>
+                <div class="footer__heading"><strong>Circle K Vietnam </strong> <i> - </i> Chuỗi cửa hàng tiện lợi - Mở cửa 24/7</div>
 
                 <!-- foot body  -->
                 <div class="footBody">

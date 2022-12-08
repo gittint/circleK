@@ -13,7 +13,6 @@
 
 html{  
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -68,7 +67,6 @@ img{
     justify-content: center;
     padding: 0 120px;
     overflow: auto;
-    /* ẩn scroll  */
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
 }
@@ -79,12 +77,12 @@ img{
 }
 
 .base__item{
-    min-width: 118px;
-    max-width: 120px;
+    max-width: 120px; 
     margin: 0 10px;
 }
 
 .base-item__icon{
+    /* chỉnh icon vuông  */
     width: 80px;
     height: 80px;
     margin: 0 auto;
@@ -122,12 +120,5 @@ img{
     cursor: pointer;
     color: var(--red-pri);
     text-transform: uppercase;
-    max-width: 237.14px;
     box-sizing: border-box;
-}
-
-.swiper-slide img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }

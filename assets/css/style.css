@@ -1,5 +1,5 @@
 .app{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -47,9 +47,10 @@
 }
 
 .header__logo::after{
+    /* vạch phân cách */
     position: absolute;
     content: "";
-    height: 100%;
+    height: 120%;
     top: 0px;
     left: 0px;
     border-left: 1px solid white;
@@ -82,6 +83,10 @@
     margin: 0 10px;
     display: block;
     padding: 14px 0;
+}
+
+.mobile__item{
+    display: none;
 }
 
 .header-item__icon{
