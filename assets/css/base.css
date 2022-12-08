@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -61,17 +62,6 @@ img{
     letter-spacing: 0.07rem;
 }
 
-.base__menu{
-    display: flex;
-    margin: 40px auto;
-    justify-content: center;
-}
-
-.base__item{
-    max-width: 120px; 
-    margin: 0 10px;
-}
-
 .base-item__icon{
     /* chỉnh icon vuông  */
     width: 80px;
@@ -112,4 +102,25 @@ img{
     color: var(--red-pri);
     text-transform: uppercase;
     box-sizing: border-box;
+}
+
+/* animation  */
+.changer-btn--red{
+    transition: all 0.5s ease;
+}
+
+.changer-btn--red:hover{
+    color: white;
+    background-color: var(--red-pri);
+    border: 1px solid var(--red-pri);
+}
+
+.changer-btn--white{
+    transition: all 0.5s ease;
+}
+
+.changer-btn--white:hover{
+    color: var(--red-pri);
+    background-color: white;
+    border: 1px solid var(--red-pri);
 }

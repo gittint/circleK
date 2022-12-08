@@ -145,19 +145,16 @@
 
     .category__menu{
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         margin-bottom: 7px;
         width: 100%;
         margin-top: 15px;
+        padding: 0 10px;
     }
     
     .category__item{
-        width: calc((100% - 40px) / 4);
-        margin-right: 15px;
-    }
-
-    .category__item:nth-child(4n+1){
-        margin-left: 18px;
+        width: calc((100% - 100px) / 4);
+        margin: 0 10px;
     }
 
     .category__product{
@@ -210,18 +207,15 @@
         margin-top: 28px;
         margin-bottom: 55px;
         display: flex;
-        justify-content: flex-start;
-        width: 415px;
+        justify-content: space-between;
+        width: 522px;
+        padding-left: 20px;
     }
 
     .service__item{
         margin: 0;
-        min-width: calc((100% /4) - 20px);
+        min-width: calc(100% / 6);
         padding: 0px 2px;
-    }
-
-    .service__item:first-child{
-        padding: 0px 2px 0px 22px;
     }
 
     .service__btn{
@@ -233,16 +227,15 @@
     }
 
     .event__list{
-        width: 560px;
+        width: 520px;
         margin-top: 14px;
-        margin-left: 10px;
-        justify-content: flex-start;
+        padding-left: 10px;
+        justify-content: space-between;
         overflow-x: auto;
     }
 
     .event__item{
-        min-width: calc((100% - 80px) /3);
-        padding: 0 10px;
+        min-width: calc((100% - 40px) /3);
     }
 
     .event__btn{
@@ -275,29 +268,21 @@
     }
 
     .form__logo{
-        max-width: 105px;
-        padding: 0px 0px 15px 68.25px;
+        width: 100px;
+        float: left;
+        margin-left: 60px;
+        margin-bottom: 20px;
     }
 
     .form__logo img{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
 
     .form__title{
         display: none;
     }
 
-    .form__logo{
-        order: 1;
-    }
-
     .form__icon{
-        position: absolute;
-        top: 31px;
-        right: 61px;
-        order: 2;
         margin: 0;
         /* z-index: 3; */
     }
@@ -307,7 +292,6 @@
 
     .form-input__box{
         justify-content: space-evenly;
-        order: 3;
     }
 
     .form__input{
@@ -316,7 +300,6 @@
     }
 
     .form__title{
-        order: 4;
     }
 
     .form__btn{
