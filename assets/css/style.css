@@ -236,7 +236,7 @@
     width: calc((100% - 140px) /8 );
 }
 
-.category-item__icon img{
+.category-item__icon svg{
     width: 41px;
     height: 43px;
 }

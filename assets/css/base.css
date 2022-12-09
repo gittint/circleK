@@ -75,10 +75,6 @@ img{
     justify-content: center;
 }
 
-.base-item__icon.active{
-    background-color: var(--red-pri);
-}
-
 .base-item__icon img{
     width: 52px;
     height: 45px;
@@ -124,3 +120,33 @@ img{
     background-color: white;
     border: 1px solid var(--red-pri);
 }
+
+/* svg color  */
+
+.base-item__icon{
+    transition: all 0.2s ease;
+}
+
+.base-item__icon svg{
+    width: 41px;
+    height: 43px;
+    color: var(--red-pri);
+    transition: all 0.5s ease;
+}
+
+.base-item__icon.active{
+    background-color: var(--red-pri);
+}
+
+.base-item__icon.active svg{
+    color: white;
+}
+
+.base__item:hover svg{
+    color: white;
+}
+
+.base__item:hover .base-item__icon{
+    background-color: var(--red-pri);
+}
+
