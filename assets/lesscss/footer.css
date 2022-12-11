@@ -239,3 +239,222 @@ img {
   background-color: white;
   border: 1px solid #ee2e24;
 }
+.footer {
+  padding: 80px 0px 20px;
+  margin-top: 109px;
+  background-color: #F4F4F4;
+  position: relative;
+}
+.footer__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer__heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase ;
+  color: #ee2e24;
+}
+.footBody {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 12px;
+  margin-top: 30px;
+}
+.footBody__content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.footBody__ads {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2px;
+}
+.ads__logo {
+  margin-right: 15px;
+}
+.ads__qrcode {
+  margin-right: 16px;
+}
+.download__app,
+.download__gg {
+  width: 91px;
+}
+.footer__foot {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 23px 0px 0px 0px;
+  color: #333333;
+}
+.foot__list {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 0px 0px 0px;
+}
+.foot__item {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 0 8px;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.foot__item a {
+  color: #333333;
+}
+.foot__item:first-child {
+  border: none;
+  padding: 0px 8px 0px 0px;
+}
+.foot__end {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+  max-width: 205px;
+}
+.footer__box {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  transform: translateY(-50%);
+}
+.footer__form {
+  background-color: white;
+  max-width: 1047px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form__inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.form__logo {
+  width: 100%;
+  max-width: 149.19px;
+}
+.form__title {
+  width: 100%;
+  max-width: 193px;
+  margin: 3px 0px 0px 29px;
+}
+.form-title__heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-align: left;
+  color: #ee2e24;
+  text-transform: uppercase;
+}
+.form-title__desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--text);
+  margin-top: 1px;
+}
+.form-input__box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 409px;
+  margin: 0px 0px 0px 20px;
+}
+.form__input {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  color: #333333;
+  text-align: center;
+  text-align: left;
+  padding: 13px 0px 11px 19px;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  max-width: 252px;
+}
+.form__btn {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  letter-spacing: 0px;
+  display: block;
+  padding: 11px 28px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  color: white;
+  background-color: #ee2e24;
+  border: 1px solid #ee2e24;
+}
+.form__btn:hover {
+  color: #ee2e24;
+  background-color: white;
+  border: 1px solid #ee2e24;
+}
+.form__icon {
+  order: 1;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 125px;
+  position: relative;
+  margin: 0px 0px 0px 42px;
+}
+.form__icon::after {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -16%;
+  height: 170%;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+.form-icon__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #f99b2a;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+}

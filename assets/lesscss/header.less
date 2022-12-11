@@ -1,0 +1,172 @@
+@import "./base.less";
+
+.app{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.header{
+    background-color: @main-color;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-bottom: 10px solid @sub-color;
+        z-index: 0;
+    }
+    
+}
+
+.header-form__icon--mobile{
+    display: none
+}
+
+.header__content{
+    .flex-center();
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.header__logo{
+    margin: 14px 16.2px 0px 18.2px;
+    width: 100%;
+    max-width: 165.03px;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        height: 171%;
+        top: -17px;
+        left: -18px;
+        border-left: 1px solid white;
+        z-index: 1
+    }
+}
+
+.header__box{
+    // .flex-between();
+    .flex-start();
+    position: relative;
+    z-index: 1;
+    background-color: @white-color;
+    padding: 0px 20px 0px 47.28px;
+}
+
+.header__menu{
+    .flex-between();
+    max-width: 384px;
+}
+
+.header__item{
+    margin: 14px 0px;
+
+    &:nth-child(7){
+        margin-right: 0px ;
+    }
+}
+
+// ẩn icon mobile
+.mobile{
+    display: none;
+}
+
+.mobile__item{
+    display: none
+}
+
+.header-item__link{
+    .flex-center();
+    flex-direction: column;
+}
+
+.header-item__icon{
+    width: 32px;
+    height: 32px;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-item__title{
+    .text12-500();
+    margin-top: 5px;
+}
+
+.header__form{
+    .flex-between();
+    max-width: 310px;
+    margin-left: 41px;
+    padding: 0px 5px;
+}
+
+.header-form__input{
+    .base__input();
+    max-width: 240px;
+}
+
+.header-form__icon{
+    .flex-center();
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: @main-color;
+}
+
+.form-icon__img{
+    margin-top: 4px
+}
+
+.header__icon{
+    .flex-between();
+    max-width: 114px;
+    margin-left: 13px;
+}
+
+.header-icon__item{
+    width: 27px;
+    height: 24px;
+
+    &:nth-child(3){
+        width: 25px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-icon__link{
+    width: 100%;
+    height: 100%;
+}
+
+.header__language{
+    .flex-center();
+    .text12-500();
+    text-transform: uppercase;
+    max-width: 41px;
+    margin-left: 25px;
+}
+
+.header__language--vi{
+    color: @main-color;
+    padding-right: 5px;
+    border-right: 1px solid @border-color;
+}
+
+.header__language--eng{
+    color: @text-color;
+    padding-left: 5px;
+}
