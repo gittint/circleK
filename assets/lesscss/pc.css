@@ -48,55 +48,98 @@ img {
   align-items: center;
   justify-content: flex-start;
 }
-.text12-400 {
+.text-small-2-regular {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.text-small-2-medium {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.text-small-2-bold {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.text-small-3-regular {
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
   letter-spacing: 0em;
   text-align: left;
 }
-.text12-500 {
+.text-small-3-medium {
   font-size: 12px;
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
 }
-.text14-400 {
+.text-small-3-bold {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.text-medium-1-regular-1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.text-medium-1-regular-2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
 }
-.text14-500 {
+.text-medium-1-medium {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
-.text14-600 {
+.text-medium-1-bold-1 {
   font-size: 14px;
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 0.05em;
   text-align: center;
 }
-.text15-400 {
+.text-medium-1-bold-2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.text-medium-3-regular {
   font-size: 15px;
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
 }
-.text20-600 {
+.text-large-bold {
   font-size: 20px;
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.05em;
+  text-align: center;
 }
-.text18-600 {
+.text-medium-2-bold {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
@@ -108,7 +151,6 @@ img {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
   text-align: left;
   padding: 13px 0px 11px 19px;
@@ -155,13 +197,12 @@ img {
 }
 .base-item__text {
   font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-align: center;
   line-height: 20px;
   color: #333333;
-  margin-top: 7px;
+  margin-top: 9px;
 }
 .base-item__text.active {
   color: #ee2e24;
@@ -178,6 +219,7 @@ img {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.05em;
+  text-align: center;
   border-bottom: 3px solid #ee2e24;
   padding-bottom: 7px;
   text-transform: uppercase;
@@ -190,7 +232,7 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
@@ -204,7 +246,7 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
@@ -213,7 +255,7 @@ img {
   color: #ee2e24;
 }
 .base__btn--white:hover {
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
@@ -225,19 +267,29 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
   cursor: pointer;
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
 .base__btn--main:hover {
   color: #ee2e24;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #ee2e24;
+}
+.scroll {
+  overflow: auto;
+  /* ẩn scroll  */
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.scroll::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
 }
 .app {
   width: 100%;
@@ -292,7 +344,7 @@ img {
   justify-content: flex-start;
   position: relative;
   z-index: 1;
-  background-color: white;
+  background-color: #fff;
   padding: 0px 20px 0px 47.28px;
 }
 .header__menu {
@@ -334,9 +386,8 @@ img {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 4px;
 }
 .header__form {
   display: flex;
@@ -352,7 +403,6 @@ img {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
   text-align: left;
   padding: 13px 0px 11px 19px;
@@ -409,7 +459,6 @@ img {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
   text-transform: uppercase;
   max-width: 41px;
@@ -423,9 +472,6 @@ img {
 .header__language--eng {
   color: #333333;
   padding-left: 5px;
-}
-.banner {
-  margin-top: 1px;
 }
 .category__menu {
   display: flex;
@@ -471,13 +517,12 @@ img {
 }
 .category-item__text {
   font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-align: center;
   line-height: 20px;
   color: #333333;
-  margin-top: 7px;
+  margin-top: 9px;
 }
 .category-item__text.active {
   color: #ee2e24;
@@ -499,6 +544,7 @@ img {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.05em;
+  text-align: center;
   border-bottom: 3px solid #ee2e24;
   padding-bottom: 7px;
   text-transform: uppercase;
@@ -528,8 +574,8 @@ img {
   line-height: 17px;
   letter-spacing: 0.05em;
   text-align: center;
-  color: black;
-  margin-top: 5px;
+  color: #000;
+  margin-top: 6px;
 }
 .product-item__price {
   font-size: 14px;
@@ -546,7 +592,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: -20px;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 .product-btn__name {
   font-size: 14px;
@@ -556,16 +602,17 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
   cursor: pointer;
   border: 1px solid #ee2e24;
   color: #ee2e24;
+  margin-top: -1px;
 }
 .product-btn__name:hover {
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
@@ -587,6 +634,7 @@ img {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.05em;
+  text-align: center;
   border-bottom: 3px solid #ee2e24;
   padding-bottom: 7px;
   text-transform: uppercase;
@@ -635,13 +683,12 @@ img {
 }
 .service-item__text {
   font-size: 14px;
-  font-weight: 600;
-  line-height: 17px;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-align: center;
   line-height: 20px;
   color: #333333;
-  margin-top: 7px;
+  margin-top: 9px;
   margin-top: 8px;
 }
 .service-item__text.active {
@@ -662,18 +709,18 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
   cursor: pointer;
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
 .service-btn__name:hover {
   color: #ee2e24;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #ee2e24;
 }
 .event {
@@ -691,6 +738,7 @@ img {
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0.05em;
+  text-align: center;
   border-bottom: 3px solid #ee2e24;
   padding-bottom: 7px;
   text-transform: uppercase;
@@ -721,7 +769,7 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
@@ -730,12 +778,12 @@ img {
   color: #ee2e24;
 }
 .event-btn__name:hover {
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
 .footer {
-  padding: 80px 0px 20px;
+  padding: 81px 0px 20px;
   margin-top: 109px;
   background-color: #F4F4F4;
   position: relative;
@@ -792,7 +840,7 @@ img {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin: 23px 0px 0px 0px;
+  margin: 24px 0px 0px 0px;
   color: #333333;
 }
 .foot__list {
@@ -837,7 +885,7 @@ img {
   background-color: white;
   max-width: 1047px;
   margin: 0 auto;
-  padding: 18px 40px;
+  padding: 20px 40px;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -854,7 +902,7 @@ img {
 .form__title {
   width: 100%;
   max-width: 193px;
-  margin: 3px 0px 0px 29px;
+  margin: 1px 0px 0px 29px;
 }
 .form-title__heading {
   font-size: 18px;
@@ -869,11 +917,11 @@ img {
 .form-title__desc {
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
   color: var(--text);
-  margin-top: 1px;
+  margin-top: 5px;
 }
 .form-input__box {
   display: flex;
@@ -888,7 +936,6 @@ img {
   font-weight: 500;
   line-height: 15px;
   letter-spacing: 0em;
-  color: #333333;
   text-align: center;
   text-align: left;
   padding: 13px 0px 11px 19px;
@@ -905,18 +952,18 @@ img {
   text-align: center;
   letter-spacing: 0px;
   display: block;
-  padding: 11px 28px;
+  padding: 11px 28px 10px 28px;
   border-radius: 20px;
   text-transform: uppercase;
   transition: all 0.5s ease;
   cursor: pointer;
-  color: white;
+  color: #fff;
   background-color: #ee2e24;
   border: 1px solid #ee2e24;
 }
 .form__btn:hover {
   color: #ee2e24;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #ee2e24;
 }
 .form__icon {
@@ -946,9 +993,9 @@ img {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   background-color: #f99b2a;
-  color: white;
+  color: #fff;
   width: 35px;
   height: 35px;
   border-radius: 20px;

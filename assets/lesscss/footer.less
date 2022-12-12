@@ -1,9 +1,9 @@
-@import "./base.less";
+@import "./mixin.less";
 
 //footer
 
 .footer{
-    padding: 80px 0px 20px;
+    padding: 81px 0px 20px;
     margin-top: 109px;
     background-color: @bg-color;
     position: relative;
@@ -16,7 +16,7 @@
 }
 
 .footer__heading{
-    .text18-600();
+    .text-medium-2-bold();
     font-style: italic;
     text-transform: uppercase ;
     color: @main-color;
@@ -31,7 +31,7 @@
 }
 
 .footBody__content{
-    .text14-400();
+    .text-medium-1-regular-2();
 }
 
 .footBody__ads{
@@ -54,7 +54,7 @@
 
 .footer__foot{
     .flex-between();
-    margin: 23px 0px 0px 0px;
+    margin: 24px 0px 0px 0px;
     color: @text-color;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .foot__item{
-    .text12-400();
+    .text-small-3-regular();
     padding: 0 8px;
     border-left: 1px solid @border-color;
     
@@ -79,7 +79,7 @@
 }
 
 .foot__end{
-    .text12-400();
+    .text-small-3-regular();
     width: 100%;
     max-width: 205px;
 }
@@ -97,7 +97,7 @@
     background-color: white;
     max-width: 1047px;
     margin: 0 auto;
-    padding: 18px 40px;
+    padding: 20px 40px;
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
 }
@@ -114,20 +114,20 @@
 .form__title{
     width: 100%;
     max-width: 193px;
-    margin: 3px 0px 0px 29px;
+    margin: 1px 0px 0px 29px;
 }
 
 .form-title__heading{
-    .text18-600();
+    .text-medium-2-bold();
     text-align: left;    
     color: @main-color;
     text-transform: uppercase;
 }
 
 .form-title__desc{
-    .text14-400();
+    .text-medium-1-regular-1();
     color: var(--text);
-    margin-top: 1px;
+    margin-top: 5px;
 }
 
 .form-input__box{
@@ -165,7 +165,7 @@
 
 .form-icon__item{
     .flex-center();
-    .text15-400();
+    .text-medium-3-regular();
     background-color: @sub-color;
     color: @white-color;
     width: 35px;
