@@ -52,38 +52,44 @@
     }
 
     &:hover{
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+        box-shadow: @color-box-shadow; 
     }
 }
 
 .product-item__title {
-    .text-medium-1-bold-1();
-    color: @black-color;
+    .text(
+        @font-weight: @weight-bold, 
+        @line-height: @line-height-s,
+        @color: @color-black
+        );
     margin-top: 6px 
 }
 
 .product-item__price {
-    .text-medium-1-bold-1();
-    color: @main-color;
+    .text(
+        @font-weight: @weight-bold, 
+        @line-height: @line-height-s,
+        @color: @color-main
+        );
     margin-top: 10px;
 }
 
 .product__btn{
     .flex-center();
     margin-top: -20px;
-    margin-bottom: 41px
+    margin-bottom: 38px
 }
 
 .product-btn__name{
     .base__btn--white();
-    margin-top: -1px;
+    margin-top: -3px;
 }
 
 //service
 .service{
     padding: 41px 0px 40px 0px;
     margin-top: 34px;
-    background-color: @bg-color;
+    background-color: @color-bg;
 }
 
 .service__title {

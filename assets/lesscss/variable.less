@@ -1,49 +1,67 @@
-//color variable
-@red-color : #ee2e24;
-@orange-color : #f99b2a;
-@grey-color : #333333;
-@white-color :#fff;
-@black-color: #000;
-@grey-rgba-color: rgba(0, 0, 0, 0.15);
-@white-grey-color : #F4F4F4;
-//color
-@main-color : @red-color;
-@sub-color : @orange-color;
-@text-color : @grey-color;
-@border-color : @grey-rgba-color;
-@bg-color : @white-grey-color;
-//font main
-@main-font-family : 'Montserrat', sans-serif;
-@main-font-size : 14px;
-@main-font-weight: 500;
-@main-line-height: 20px;
-@main-letter-spacing: 0.05em; 
+//color 
+@color-red : #ee2e24;
+@color-orange : #f99b2a;
+@color-grey : #333333;
+@color-white :#fff;
+@color-black: #000;
+@color-grey-lighter: rgba(0, 0, 0, 0.15);
+@color-grey-light : #F4F4F4;
+@color-grey-shadow: rgb(99 99 99 / 20%);
+
 //size
-@size-small-1 : 9px;
-@size-small-2 : 10px;
-@size-small-3 : 12px;
-@size-medium-1 : 14px;
-@size-medium-2 : 18px ;
-@size-medium-3 : 15px;
-@size-large : 20px;
+@size-xs : 9px;
+@size-s : 10px;
+@size-m : 12px;
+@size-l : 14px; 
+@size-xl : 15px;
+@size-2xl : 18px ;
+@size-3xl : 20px;
+
 //weight 
 @weight-regular: 400;
-@weight-medium: 500;
+@weight-medium: 500; 
 @weight-bold: 600;
-//line-height
-@line-height-small-1: 10.97px;
-@line-height-small-2: 12.19px;
-@line-height-mediun-1: 14px;
-@line-height-mediun-2: 15px;
-@line-height-mediun-3: 17px;
-@line-height-mediun-4: 18px;
-@line-height-large-1: 20px;
-@line-height-large-2: 22px;
-@line-height-large-3: 24px;
-@line-height-large-4: 36px;
-//letter-spacing
+
+//line height
+@line-height-2xs: 14px;
+@line-height-xs: 15px;
+@line-height-s: 17px;
+@line-height-m: 18px;
+@line-height-l: 20px; 
+@line-height-xl: 22px;
+@line-height-2xl: 24px;
+@line-height-3xl: 36px;
+
+//letter spacing
 @spacing : 0.05em;
 @no-spacing : 0em;
-//text-align
-@center : center;
-@left: left;
+
+//font family
+@family-monterrat: 'Montserrat', sans-serif;
+
+//square size
+@square-small : 35px;
+@square-medium :40px;
+@square-large: 60px;
+@square : 80px;
+
+
+
+
+// 
+//variable
+// ===================================
+//color
+@color-main : @color-red;
+@color-sub : @color-orange;
+@color-text : @color-grey;
+@color-border : @color-grey-lighter;
+@color-bg : @color-grey-light;
+@color-box-shadow: @color-grey-shadow 0px 2px 8px 0px;
+
+//font main
+@main-font-family : @family-monterrat;
+@main-font-size : @size-l;
+@main-font-weight: @weight-medium;
+@main-line-height: @line-height-l;
+@main-letter-spacing: @spacing; 

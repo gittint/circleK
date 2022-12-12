@@ -13,6 +13,8 @@ html{
     font-weight: @main-font-weight;
     line-height: @main-line-height;
     letter-spacing: @main-letter-spacing; 
+    color: @color-text;
+    text-align: center;
 }
 
 ul{
@@ -56,184 +58,155 @@ img{
     justify-content: flex-start;
 }
 
-.text(@font-size,@font-weight,@line-height,@letter-spacing,@text-align){
+.text(
+    @font-size: @main-font-size , //14
+    @font-weight: @main-font-weight, //500
+    @line-height: @main-line-height, //20
+    @letter-spacing : @main-letter-spacing, //0.05
+    @color : @color-text,
+    @text-align :center
+    ){
     font-size: @font-size;
     font-weight: @font-weight;
     line-height: @line-height;
     letter-spacing: @letter-spacing;
+    color: @color;
     text-align: @text-align;
 }
 
-//.text10-400
-.text-small-2-regular{
-    .text(@size-small-2, @weight-regular, @line-height-mediun-4, @spacing, @left);
-}
-
-//.text10-500
-.text-small-2-medium{
-    .text(@size-small-2, @weight-medium, @line-height-mediun-1, @spacing, @center);
-}
-
-//.text10-600
-.text-small-2-bold{
-    .text(@size-small-2, @weight-bold, @line-height-mediun-1, @spacing, @center);
-}
-
-//.text12-400
-.text-small-3-regular{
-    .text(@size-small-3, @weight-regular, @line-height-mediun-2, @no-spacing, @left);
-}
-
-//.text12-500
-.text-small-3-medium{
-    .text(@size-small-3, @weight-medium, @line-height-mediun-2, @no-spacing, @center);
-}
-
-//.text12-600
-.text-small-3-bold{
-    .text(@size-small-3, @weight-bold, @line-height-mediun-2, @spacing, @center);
-}
-
-//.text14-400
-.text-medium-1-regular-1{
-    .text(@size-medium-1, @weight-regular, @line-height-mediun-3, @no-spacing, @left);
-}
-
-.text-medium-1-regular-2{
-    .text(@size-medium-1, @weight-regular, @line-height-large-3, @no-spacing, @left);
-}
-
-//.text14-500
-.text-medium-1-medium{
-    .text(@size-medium-1, @weight-medium, @line-height-large-1, @spacing, @center);
-}
-
-// .text14-600
-.text-medium-1-bold-1 {
-    .text(@size-medium-1, @weight-bold, @line-height-mediun-3, @spacing, @center);
-}
-
-.text-medium-1-bold-2{
-    .text(@size-medium-1, @weight-bold, @line-height-large-3, @spacing, @center);
-}
-
-//.text15-400
-.text-medium-3-regular{
-    .text(@size-medium-3, @weight-regular, @line-height-mediun-3, @no-spacing, @center);
-}
-
-// .text20-600
-.text-large-bold{
-    .text(@size-large , @weight-bold, @line-height-large-4, @spacing, @center);
-}
-
-//.text18-600
-.text-medium-2-bold{
-    .text(@size-medium-2 , @weight-bold, @line-height-large-2, @no-spacing, @center);
-}
+.square(
+    @width: @square,
+    @height: @square,
+    @border-radius: 50%,
+    @background-color: transparent
+    ){
+        width: @width;
+        height: @height;
+        border-radius: @border-radius;
+        background-color: @background-color; 
+    }
 
 .base__input{
-    .text-small-3-medium();
+    .text(
+        @font-size: @size-m, 
+        @font-weight :@weight-medium,
+        @line-height: @line-height-xs,
+        @letter-spacing: @no-spacing,
+        );
     text-align: left;
     padding: 13px 0px 11px 19px;
     border-radius: 20px;
     width: 100%;
-    border: 1px solid @border-color;
+    border: 1px solid @color-border;
 }
 
 .base__menu{
     .flex-between();
     align-items: flex-start;
-
 }
 
-.base-item__icon{
+.base-item__icon( 
+    @margin: 0 auto,  
+    @bg-color: @color-white, 
+    @box-shadow: @color-box-shadow, 
+    @transition: all 0.2s ease,
+    @width-svg: 41px,
+    @height-svg: 43px,
+    ){
     .flex-center();
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background-color: white;
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-    transition: all 0.2s ease;
+    .square(
+        @background-color: @bg-color;
+    );
+    margin: @margin;
+    box-shadow: @color-box-shadow;
+    transition: @transition;
 
     svg{
-        width: 41px;
-        height: 43px;
-        color: @main-color;
+        width: @width-svg;
+        height: @height-svg;
+        color: @color-main;
     }
 
     &.active, &:hover{
-        background-color: @main-color;
+        background-color: @color-main;
         
         svg{
-            color: white;
+            color: @color-white;
         }
 
         .base-item__text{
-            color: @main-color ;
+            color: @color-main ;
         }
     }  
 }
 
 .base-item__text{
-    .text-medium-1-medium();
-    line-height: 20px;
-    color: @text-color;
+    color: @color-text;
     margin-top: 9px;
 
     &.active{
-        color: @main-color;
+        color: @color-main;
     }
 }
 
 .base__title{
     .flex-center();
-    border-bottom: 1px solid @sub-color;
+    border-bottom: 1px solid @color-sub;
 }
 
-.base__heading{
-    .text-large-bold();
-    border-bottom: 3px solid @main-color;
+.base__heading(){
+    .text(
+        @font-size : @size-3xl ,
+        @font-weight : @weight-bold,
+        @line-height: @line-height-3xl,
+        );
+    border-bottom: 3px solid @color-main;
     padding-bottom: 7px;
     text-transform: uppercase;
 }
 
-.base__btn{
-    .text-medium-1-bold-1();
-    letter-spacing: 0px;
+.base__btn--main(
+    @padding :11.5px 28px 11.5px 28px,
+    @border-radius: 20px,
+    @text-transform: uppercase,
+    @transition: all 0.5s ease,
+    @color: @color-white,
+    @background-color: @color-main,
+    @border: 1px solid @color-main,
+    @color-hover: @color-main,
+    @background-color-hover: @color-white,
+    ){
+    .text(
+        @font-weight: @weight-bold,
+        @line-height: @line-height-s,
+        @letter-spacing: @no-spacing,
+        @color: @color
+        );
     display: block;
-    padding: 11px 28px 10px 28px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
+    padding: @padding;
+    border-radius: @border-radius;
+    text-transform: @text-transform;
+    transition: @transition;
     cursor: pointer;
+    background-color: @background-color;
+    border: @border;
+
+    &:hover{
+        color: @color-hover;
+        background-color: @background-color-hover;
+    }
+           
 }
 
 .base__btn--white{
-    .base__btn();
-    border: 1px solid @main-color;
-    color: @main-color;
-
-    &:hover{
-        color: @white-color;
-        background-color: @main-color;
-        border: 1px solid @main-color;
-    }
+    .base__btn--main(
+    @color: @color-main,
+    @background-color: @color-white,
+    @color-hover: @color-white,
+    @background-color-hover: @color-main,
+    );
 }
 
-.base__btn--main{
-    .base__btn();
-    color: @white-color;
-    background-color: @main-color;
-    border: 1px solid @main-color;
-
-    &:hover{
-        color: @main-color;
-        background-color: @white-color;
-        border: 1px solid @main-color;
-    }
-}
 
 //base mobile
 .scroll{
