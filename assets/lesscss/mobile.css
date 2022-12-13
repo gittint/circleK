@@ -157,13 +157,17 @@ img {
   }
   .category-item__text,
   .service-item__text {
+    margin-top: 9px;
     font-size: 10px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 0.05em;
     color: #333333;
     text-align: center;
-    margin-top: 9px;
+  }
+  .category-item__text.active,
+  .service-item__text.active {
+    color: #ee2e24;
   }
   .category-item__text.active,
   .service-item__text.active {
@@ -193,6 +197,14 @@ img {
   .header__logo img {
     width: 100%;
     height: 100%;
+  }
+  .header-item__title {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 11px;
+    letter-spacing: 0em;
+    color: #333333;
+    text-align: center;
   }
   .header__form {
     margin-left: 0px;
@@ -337,7 +349,7 @@ img {
   }
   .footBody {
     margin-top: 14px;
-    padding: 0px 0px 12px 15px;
+    padding: 0px 0px 6px 15px;
   }
   .footBody-content__text {
     font-size: 10px;
@@ -377,7 +389,7 @@ img {
     display: none;
   }
   .footer__foot {
-    margin: 20px 0px 0px 16px;
+    padding: 18px 0px 0px 35px;
     justify-content: flex-start;
     flex-wrap: wrap;
   }

@@ -16,6 +16,7 @@
     }
 
     .category-item__text, .service-item__text{
+        .base-item__text();
         .text(
             @font-size: @size-s , 
             @line-height: @line-height-2xs,
@@ -31,8 +32,6 @@
             @color: @color-main    
             );
         }
-
-        margin-top: 9px;
     }
     
 
@@ -56,6 +55,15 @@
             width: 100%;
             height: 100%;
         }
+    }
+
+    .header-item__title{
+        .text(
+            @font-size: @size-s,
+            @font-weight: @weight-bold,
+            @line-height: 11px,
+            @letter-spacing :@no-spacing
+        );
     }
     
     .header__form{
@@ -98,7 +106,7 @@
 
     //product
     .product__list{
-        width: 710px;
+        width: @width-mobile-menu-l;
         margin: 19px 0px 48px;
         align-items: flex-start;
     }
@@ -128,7 +136,7 @@
     }
 
     .service__menu {
-        width: 524px;
+        width: @width-mobile-menu-m;
         padding: 0px;
         margin: 50px 0px 42px 10px;
     }
@@ -216,7 +224,7 @@
 
     .footBody{
         margin-top: 14px;
-        padding: 0px 0px 12px 15px;
+        padding: 0px 0px 6px 15px;
     }
 
     .footBody-content__text{
@@ -269,7 +277,7 @@
 
 
     .footer__foot{
-        margin: 20px 0px 0px 16px;
+        padding: 18px 0px 0px 35px;
         justify-content: flex-start;
         flex-wrap: wrap;
     }
